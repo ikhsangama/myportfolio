@@ -3,6 +3,7 @@ $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background1.jpg);
 $potrait: url(../img/WaterMarkSmall.png);
+$potrait-small: url(../img/WaterMarkSmall-sml.png);
 $background-opacity: 0.7;
 
 @mixin easeOut {
@@ -27,5 +28,30 @@ $background-opacity: 0.7;
         z-index: -1;
       }
     }
+  }
+}
+
+// Media Kuery Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }

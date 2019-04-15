@@ -1,0 +1,75 @@
+// Widescreen
+@include mediaXl {
+}
+
+// Widescreen
+@include mediaLg {
+}
+
+// Widescreen
+@include mediaMd {
+  main {
+    // align-items: center;
+    // text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    &#home {
+      overflow: hidden;
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .potrait {
+      background: $potrait-small;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+// Widescreen
+@include mediaSm {
+  main {
+    .lg-heading {
+      margin-top: 15vh;
+      background-color: red;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    &#home {
+      overflow: hidden;
+      h1 {
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
