@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://ikhsangama.github.io/myportfolio",
+  "homepage": "https://github.com/ikhsangama/new-port#readme",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css --recursive",
     "deploy": "gh-pages -d dist"
@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/ikhsangama/new-port/issues"
   },
-  "homepage": "https://github.com/ikhsangama/new-port#readme",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
