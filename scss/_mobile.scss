@@ -52,7 +52,9 @@
     transform: translate3d(100%, 0, 0);
 
     .potrait {
-      background: $potrait-small;
+      background: $potrait no-repeat;
+      background-size: cover;
+      background-position: 0, -10px;
       width: 150px;
       height: 150px;
     }

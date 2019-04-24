@@ -89,6 +89,8 @@
       width: 250px;
       height: 250px;
       background: $potrait no-repeat;
+      background-size: cover;
+      background-position: 0, -10px;
       border-radius: 50%;
       border: 3px solid $secondary-color;
     }
